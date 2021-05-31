@@ -23,8 +23,10 @@ spec:
         app: springboot
     spec:
       containers:
-      - image: kubernet8s/spring-boot-mongo
+      - name: springboot
+        image: kubernet8s/spring-boot-mongo
         name: springboot
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080  
         env:
