@@ -15,6 +15,6 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: kubernet8s/hello:0.0.1
+      - image: kubernet8s/hello:latest
         imagePullPolicy: "Always"
         name: nginx
