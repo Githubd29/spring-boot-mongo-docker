@@ -14,7 +14,7 @@ kind: ReplicationController
 metadata:
   name: spring-controller
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     app: springboot
   template:
@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: springboot
-        image: kubernet8s/spring-boot-mongo
+        image: kubernet8s/spring-boot-mongo:tag
         name: springboot
         imagePullPolicy: Always
         ports:
